@@ -42,6 +42,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Audience cards: fixed width on mobile, fluid in desktop grid */
+@media (min-width: 768px) {
+  .audience-card {
+    width: auto !important;
+  }
+}
+
 /* Subtle scale on hover for cards */
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;

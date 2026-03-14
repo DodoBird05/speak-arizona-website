@@ -4,6 +4,7 @@ import MobileMenu from "@/components/MobileMenu";
 import LatestVideo from "@/components/LatestVideo";
 import EpisodeCarousel from "@/components/EpisodeCarousel";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import FaqAccordion from "@/components/FaqAccordion";
 
 const YOUTUBE_CHANNEL_ID = "UCZG0h9pQsTHWuo2Z_EkCDJA";
 const UPLOADS_PLAYLIST_ID = "UUZG0h9pQsTHWuo2Z_EkCDJA"; // UC → UU
@@ -380,14 +381,14 @@ export default async function Home() {
             Whether you&apos;re just getting started or looking to level up, Speak Arizona is for anyone who wants to communicate with more confidence and lead with more purpose.
           </p>
         </div>
-        <div className="max-w-6xl mx-auto pl-6">
+        <div className="max-w-6xl mx-auto pl-6 md:px-6">
           <div
-            className="flex gap-4 overflow-x-auto pb-4 pr-6"
+            className="flex gap-4 overflow-x-auto pb-4 pr-6 md:grid md:grid-cols-3 md:overflow-visible md:pr-0"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {/* Job Interviews */}
             <div
-              className="flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
+              className="audience-card flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
               style={{ width: "260px", minHeight: "300px", background: "linear-gradient(135deg, #004165 0%, #005a8c 100%)" }}
             >
               <div>
@@ -407,7 +408,7 @@ export default async function Home() {
 
             {/* Managers */}
             <div
-              className="flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
+              className="audience-card flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
               style={{ width: "260px", minHeight: "300px", background: "#F2DF74" }}
             >
               <div>
@@ -427,7 +428,7 @@ export default async function Home() {
 
             {/* Entrepreneurs */}
             <div
-              className="flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
+              className="audience-card flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
               style={{ width: "260px", minHeight: "300px", background: "linear-gradient(135deg, #003350 0%, #004165 100%)" }}
             >
               <div>
@@ -447,7 +448,7 @@ export default async function Home() {
 
             {/* First-Time Speakers */}
             <div
-              className="flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
+              className="audience-card flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
               style={{ width: "260px", minHeight: "300px", background: "#F2DF74" }}
             >
               <div>
@@ -467,7 +468,7 @@ export default async function Home() {
 
             {/* Introverts */}
             <div
-              className="flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
+              className="audience-card flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
               style={{ width: "260px", minHeight: "300px", background: "linear-gradient(135deg, #004165 0%, #005a8c 100%)" }}
             >
               <div>
@@ -482,6 +483,26 @@ export default async function Home() {
               </div>
               <p className="text-white/80 text-sm leading-relaxed">
                 Being quiet doesn&apos;t mean you have nothing to say. Learn how to communicate powerfully without changing who you are — in meetings, on stage, and in everyday conversations.
+              </p>
+            </div>
+
+            {/* Content Creators */}
+            <div
+              className="audience-card flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
+              style={{ width: "260px", minHeight: "300px", background: "#F2DF74" }}
+            >
+              <div>
+                <div className="w-12 h-12 bg-black/10 rounded-full flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="font-heading font-bold text-lg text-black mb-2">
+                  Aspiring Content Creators &amp; Video Hosts
+                </h3>
+              </div>
+              <p className="text-black/70 text-sm leading-relaxed">
+                Want to start a YouTube channel, podcast, or build your presence on camera? Learn how to speak naturally on video, engage an audience, and develop the on-screen confidence that sets great creators apart.
               </p>
             </div>
           </div>
@@ -516,48 +537,18 @@ export default async function Home() {
               FREQUENTLY ASKED QUESTIONS
             </h2>
           </AnimateOnScroll>
-          <div className="space-y-6">
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">What is Speak Arizona?</h3>
-              <p className="text-text-light leading-relaxed">Speak Arizona is a weekly podcast about public speaking, leadership, and communication skills. Hosted by Rupesh Parbhoo and powered by District 3 Toastmasters International, each episode features courageous conversations with world-class speakers, authors, coaches, and leaders.</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">Who hosts the Speak Arizona podcast?</h3>
-              <p className="text-text-light leading-relaxed">Speak Arizona is hosted by Rupesh Parbhoo, an Arizona-based speaker and communication coach. Rupesh is a Toastmasters leader who believes that the best conversations happen when people are willing to be courageous.</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">How often are new episodes released?</h3>
-              <p className="text-text-light leading-relaxed">New episodes are released every week. You can subscribe on Spotify, Apple Podcasts, or YouTube to get notified when a new episode drops.</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">Where can I listen to Speak Arizona?</h3>
-              <p className="text-text-light leading-relaxed">Speak Arizona is available on Spotify, Apple Podcasts, YouTube, and most major podcast platforms. You can also watch full video episodes on the Speak Arizona YouTube channel.</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">Do I need to be a Toastmasters member to listen?</h3>
-              <p className="text-text-light leading-relaxed">Not at all. While Speak Arizona is powered by District 3 Toastmasters, the podcast is for everyone — whether you&apos;re a seasoned speaker, a first-time presenter, or someone who just wants to communicate better at work and in life.</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">What topics does Speak Arizona cover?</h3>
-              <p className="text-text-light leading-relaxed">Episodes cover a wide range of topics including public speaking techniques, leadership development, interview and career communication, team management, confidence building, networking strategies, and personal branding through communication.</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">Can I be a guest on Speak Arizona?</h3>
-              <p className="text-text-light leading-relaxed">Yes! Speak Arizona is always looking for guests with compelling stories and expertise in public speaking, leadership, or communication. Reach out through our contact page to pitch your story.</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">What is Toastmasters International?</h3>
-              <p className="text-text-light leading-relaxed">Toastmasters International is the world&apos;s leading organization for developing public speaking and leadership skills. With over 16,800 clubs in 143 countries, Toastmasters provides a supportive environment where members practice communication, build confidence, and grow as leaders. District 3 serves Arizona, New Mexico, and West Texas.</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">Is Speak Arizona only about public speaking?</h3>
-              <p className="text-text-light leading-relaxed">Not at all. While public speaking is a core topic, Speak Arizona covers a wide range of communication and leadership skills — including how to lead meetings effectively, navigate difficult workplace conversations, build confidence in interviews, network authentically, and develop your personal brand through better communication.</p>
-            </div>
-            <div>
-              <h3 className="font-heading font-bold text-lg text-black mb-1">Who are some notable guests on Speak Arizona?</h3>
-              <p className="text-text-light leading-relaxed">Speak Arizona has featured World Champions of Public Speaking Darren LaCroix and Mark Brown, leadership coach Kelly Soifer, and William Miller — a 10-year-old world-renowned public speaker on leadership. Every guest brings a unique perspective on what it means to communicate with courage and purpose.</p>
-            </div>
-          </div>
+          <FaqAccordion items={[
+            { question: "What is Speak Arizona?", answer: "Speak Arizona is a weekly podcast about public speaking, leadership, and communication skills. Hosted by Rupesh Parbhoo and powered by District 3 Toastmasters International, each episode features courageous conversations with world-class speakers, authors, coaches, and leaders." },
+            { question: "Who hosts the Speak Arizona podcast?", answer: "Speak Arizona is hosted by Rupesh Parbhoo, an Arizona-based speaker and communication coach. Rupesh is a Toastmasters leader who believes that the best conversations happen when people are willing to be courageous." },
+            { question: "How often are new episodes released?", answer: "New episodes are released every week. You can subscribe on Spotify, Apple Podcasts, or YouTube to get notified when a new episode drops." },
+            { question: "Where can I listen to Speak Arizona?", answer: "Speak Arizona is available on Spotify, Apple Podcasts, YouTube, and most major podcast platforms. You can also watch full video episodes on the Speak Arizona YouTube channel." },
+            { question: "Do I need to be a Toastmasters member to listen?", answer: "Not at all. While Speak Arizona is powered by District 3 Toastmasters, the podcast is for everyone — whether you're a seasoned speaker, a first-time presenter, or someone who just wants to communicate better at work and in life." },
+            { question: "What topics does Speak Arizona cover?", answer: "Episodes cover a wide range of topics including public speaking techniques, leadership development, interview and career communication, team management, confidence building, networking strategies, and personal branding through communication." },
+            { question: "Can I be a guest on Speak Arizona?", answer: "Yes! Speak Arizona is always looking for guests with compelling stories and expertise in public speaking, leadership, or communication. Reach out through our contact page to pitch your story." },
+            { question: "What is Toastmasters International?", answer: "Toastmasters International is the world's leading organization for developing public speaking and leadership skills. With over 16,800 clubs in 143 countries, Toastmasters provides a supportive environment where members practice communication, build confidence, and grow as leaders. District 3 serves Arizona, New Mexico, and West Texas." },
+            { question: "Is Speak Arizona only about public speaking?", answer: "Not at all. While public speaking is a core topic, Speak Arizona covers a wide range of communication and leadership skills — including how to lead meetings effectively, navigate difficult workplace conversations, build confidence in interviews, network authentically, and develop your personal brand through better communication." },
+            { question: "Who are some notable guests on Speak Arizona?", answer: "Speak Arizona has featured World Champions of Public Speaking Darren LaCroix and Mark Brown, leadership coach Kelly Soifer, and William Miller — a 10-year-old world-renowned public speaker on leadership. Every guest brings a unique perspective on what it means to communicate with courage and purpose." },
+          ]} />
         </div>
       </section>
 
