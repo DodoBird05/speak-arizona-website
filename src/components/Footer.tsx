@@ -43,10 +43,10 @@ export default function Footer() {
                 About
               </Link>
               <Link
-                href="/blog"
+                href="/news"
                 className="block text-white/70 hover:text-yellow transition-colors"
               >
-                Blog
+                News
               </Link>
               <Link
                 href="/contact"

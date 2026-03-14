@@ -36,13 +36,6 @@ export default function MobileMenu() {
       {open && (
         <div className="absolute right-0 top-10 bg-white rounded-2xl shadow-lg py-4 px-6 space-y-3 min-w-[160px] z-50">
           <Link
-            href="/"
-            className="block font-heading font-medium text-text hover:text-black"
-            onClick={() => setOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
             href="/about"
             className="block font-heading font-medium text-text hover:text-black"
             onClick={() => setOpen(false)}
@@ -50,11 +43,11 @@ export default function MobileMenu() {
             About
           </Link>
           <Link
-            href="/blog"
+            href="/news"
             className="block font-heading font-medium text-text hover:text-black"
             onClick={() => setOpen(false)}
           >
-            Blog
+            News
           </Link>
           <Link
             href="/contact"

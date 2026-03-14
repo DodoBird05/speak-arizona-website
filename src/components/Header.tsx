@@ -43,22 +43,16 @@ export default function Header() {
         {/* Desktop nav */}
         <div className="flex items-center gap-8">
           <Link
-            href="/"
-            className="font-heading font-medium text-text hover:text-black transition-colors"
-          >
-            Home
-          </Link>
-          <Link
             href="/about"
             className="font-heading font-medium text-text hover:text-black transition-colors"
           >
             About
           </Link>
           <Link
-            href="/blog"
+            href="/news"
             className="font-heading font-medium text-text hover:text-black transition-colors"
           >
-            Blog
+            News
           </Link>
           <Link
             href="/contact"

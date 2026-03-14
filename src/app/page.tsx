@@ -185,12 +185,13 @@ export default async function Home() {
             className="w-full h-auto"
           />
           <div className="absolute top-6 left-0 right-0 px-6 flex items-center justify-between">
-            <span
+            <Link
+              href="/"
               className="font-heading font-black text-white text-2xl uppercase"
               style={{ letterSpacing: "-0.06em" }}
             >
               SPEAK ARIZONA
-            </span>
+            </Link>
             <MobileMenu />
           </div>
         </div>
@@ -252,14 +253,20 @@ export default async function Home() {
       <section className="py-20" style={{ backgroundImage: "url('/images/gradient-square.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="overflow-hidden rounded-3xl shadow-lg">
-              <Image
-                src="/images/rupesh-yellow.jpg"
-                alt="Rupesh Parbhoo"
-                width={600}
-                height={750}
-                className="w-full h-auto transition-transform duration-500 ease-out hover:scale-110"
-              />
+            <div>
+              <div className="overflow-hidden rounded-3xl shadow-lg">
+                <Image
+                  src="/images/rupesh-yellow.jpg"
+                  alt="Rupesh Parbhoo"
+                  width={600}
+                  height={750}
+                  className="w-full h-auto transition-transform duration-500 ease-out hover:scale-110"
+                />
+              </div>
+              <p className="text-black/30 text-xs mt-2 flex items-center gap-1">
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2" /><path d="M8.5 6L10 3h4l1.5 3" /><circle cx="12" cy="13" r="3.5" /></svg>
+                <a href="https://headshotsbymarie.com" target="_blank" rel="noopener noreferrer" className="hover:text-black/50 transition-colors">Marie Feutrier — headshotsbymarie.com</a>
+              </p>
             </div>
             <div>
               <AnimateOnScroll>
@@ -518,7 +525,7 @@ export default async function Home() {
             </h2>
           </AnimateOnScroll>
           <p className="text-text-light text-lg leading-relaxed mb-4">
-            Speak Arizona is proudly produced by District 3 of Toastmasters International, serving over 125 clubs across Arizona, New Mexico, and West Texas. Toastmasters is the world&apos;s leading organization for developing public speaking, communication, and leadership skills through a supportive, peer-driven community.
+            Speak Arizona is proudly produced by <a href="https://d3toastmasters.org" target="_blank" rel="noopener noreferrer" className="text-blue underline hover:text-blue-light transition-colors">District 3 of Toastmasters International</a>, serving over 125 clubs across Arizona, New Mexico, and West Texas. Toastmasters is the world&apos;s leading organization for developing public speaking, communication, and leadership skills through a supportive, peer-driven community.
           </p>
           <p className="text-text-light text-lg leading-relaxed mb-4">
             With nearly 100 years of history, Toastmasters has helped millions of people around the world find their voice and grow as leaders. District 3 carries that mission forward in the Southwest — and Speak Arizona extends it beyond the meeting room to anyone with an internet connection and a desire to grow.

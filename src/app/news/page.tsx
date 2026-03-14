@@ -2,11 +2,11 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Public Speaking & Leadership Blog",
+  title: "Public Speaking & Leadership News",
   description:
     "Tips, stories, and strategies on public speaking, communication skills, and leadership from the Speak Arizona podcast.",
   alternates: {
-    canonical: "https://speakarizona.com/blog",
+    canonical: "https://speakarizona.com/news",
   },
 };
 
@@ -45,10 +45,10 @@ export default function Blog() {
       <section className="bg-blue py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 text-center text-white">
           <h1 className="font-heading font-extrabold text-4xl md:text-5xl mb-6">
-            Blog
+            News
           </h1>
           <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
-            Stories, insights, and updates from the Speak Arizona podcast.
+            Stories, insights, and updates from Speak Arizona.
           </p>
         </div>
       </section>
@@ -68,7 +68,7 @@ export default function Blog() {
                   <span className="text-text-light text-sm">{post.date}</span>
                 </div>
                 <h2 className="font-heading font-bold text-xl text-black mb-3">
-                  <Link href={`/blog/${post.slug}`} className="hover:underline">
+                  <Link href={`/news/${post.slug}`} className="hover:underline">
                     {post.title}
                   </Link>
                 </h2>
