@@ -105,6 +105,69 @@ export default function About() {
         </div>
       </section>
 
+      {/* Meet the Team */}
+      <section className="bg-white py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="font-heading font-bold text-3xl text-black mb-12 text-center">
+            Meet the Team
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="overflow-hidden rounded-2xl shadow-lg mb-4">
+                <Image
+                  src="/images/team-rupesh.jpg"
+                  alt="Rupesh Parbhoo"
+                  width={400}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
+              <h3 className="font-heading font-bold text-lg text-black">Rupesh Parbhoo</h3>
+              <p className="text-text-light text-sm">Host &amp; Team Leader</p>
+            </div>
+            <div className="text-center">
+              <div className="overflow-hidden rounded-2xl shadow-lg mb-4">
+                <Image
+                  src="/images/team-vincent.jpg"
+                  alt="Vincent Feutrier"
+                  width={400}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
+              <h3 className="font-heading font-bold text-lg text-black">Vincent Feutrier</h3>
+              <p className="text-text-light text-sm">Video Editor</p>
+            </div>
+            <div className="text-center">
+              <div className="overflow-hidden rounded-2xl shadow-lg mb-4">
+                <Image
+                  src="/images/team-matt.jpg"
+                  alt="Matthew Malan"
+                  width={400}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
+              <h3 className="font-heading font-bold text-lg text-black">Matthew Malan</h3>
+              <p className="text-text-light text-sm">Video Editor</p>
+            </div>
+            <div className="text-center">
+              <div className="overflow-hidden rounded-2xl shadow-lg mb-4">
+                <Image
+                  src="/images/team-marie.jpg"
+                  alt="Marie Feutrier"
+                  width={400}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </div>
+              <h3 className="font-heading font-bold text-lg text-black">Marie Feutrier</h3>
+              <p className="text-text-light text-sm">Public Relations Manager</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* District 3 */}
       <section className="bg-white py-20">
         <div className="max-w-3xl mx-auto px-6 text-center">
