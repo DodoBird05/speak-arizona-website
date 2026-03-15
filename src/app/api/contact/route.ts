@@ -1,8 +1,6 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const SUBJECT_LABELS: Record<string, string> = {
   general: "General Inquiry",
   guest: "Guest Request",
@@ -12,6 +10,14 @@ const SUBJECT_LABELS: Record<string, string> = {
 
 export async function POST(request: Request) {
   try {
+    if (!process.env.RESEND_API_KEY) {
+      return NextResponse.json(
+        { error: "Contact form is not configured yet." },
+        { status: 503 }
+      );
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const { name, email, subject, message } = await request.json();
 
     if (!name || !email || !message) {
