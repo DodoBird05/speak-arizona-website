@@ -42,12 +42,21 @@ export const metadata: Metadata = {
     siteName: "Speak Arizona",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "https://speakarizona.com/images/speak-arizona-podcast-public-speaking-leadership-by-marie-feutrier.webp",
+        width: 1400,
+        height: 626,
+        alt: "Speak Arizona Podcast — Public Speaking, Leadership & Communication",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Speak Arizona | Public Speaking & Communication Skills Podcast",
     description:
       "Weekly podcast on public speaking, leadership, and communication. Hosted by Rupesh Parbhoo.",
+    images: ["https://speakarizona.com/images/speak-arizona-podcast-public-speaking-leadership-by-marie-feutrier.webp"],
   },
   alternates: {
     canonical: "https://speakarizona.com",
@@ -62,6 +71,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Speak Arizona",
+              url: "https://speakarizona.com",
+              logo: "https://speakarizona.com/images/logo.png",
+              description:
+                "Weekly podcast on public speaking, leadership, and communication skills. Powered by District 3 Toastmasters.",
+              foundingDate: "2024",
+              sameAs: [
+                "https://www.youtube.com/@speakarizona",
+                "https://www.instagram.com/speakarizona/",
+                "https://www.linkedin.com/showcase/speak-arizona/",
+                "https://www.facebook.com/people/Speak-Arizona/61587110443189/",
+                "https://www.tiktok.com/@speakarizona",
+              ],
+            }),
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

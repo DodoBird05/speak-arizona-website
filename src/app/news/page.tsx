@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Public Speaking & Leadership News",
@@ -10,35 +11,9 @@ export const metadata: Metadata = {
   },
 };
 
-// Placeholder blog posts — replace with real content or a CMS later
-const posts = [
-  {
-    slug: "welcome-to-speak-arizona",
-    title: "Welcome to Speak Arizona",
-    date: "March 2026",
-    excerpt:
-      "Introducing our podcast and what you can expect from Courageous Conversations.",
-    tag: "Announcement",
-  },
-  {
-    slug: "why-public-speaking-matters",
-    title: "Why Public Speaking Still Matters in 2026",
-    date: "March 2026",
-    excerpt:
-      "In an age of AI and automation, the ability to connect with a live audience is more valuable than ever.",
-    tag: "Communication",
-  },
-  {
-    slug: "finding-your-voice",
-    title: "Finding Your Voice: Lessons from Toastmasters",
-    date: "March 2026",
-    excerpt:
-      "What I learned about authentic communication through years of Toastmasters.",
-    tag: "Leadership",
-  },
-];
-
 export default function Blog() {
+  const posts = getAllPosts();
+
   return (
     <>
       {/* Hero */}
@@ -55,33 +30,43 @@ export default function Blog() {
 
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="space-y-8">
-            {posts.map((post) => (
-              <article
-                key={post.slug}
-                className="bg-gray-light rounded-2xl p-8 hover:shadow-md transition-shadow"
-              >
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="bg-yellow text-black text-xs font-heading font-bold px-3 py-1 rounded-full">
-                    {post.tag}
-                  </span>
-                  <span className="text-text-light text-sm">{post.date}</span>
-                </div>
-                <h2 className="font-heading font-bold text-xl text-black mb-3">
-                  <Link href={`/news/${post.slug}`} className="hover:underline">
-                    {post.title}
-                  </Link>
-                </h2>
-                <p className="text-text-light leading-relaxed">
-                  {post.excerpt}
-                </p>
-              </article>
-            ))}
-          </div>
-
-          <div className="text-center mt-12 text-text-light">
-            <p>More posts coming soon. Stay tuned!</p>
-          </div>
+          {posts.length === 0 ? (
+            <div className="text-center text-text-light">
+              <p>No posts yet. Stay tuned!</p>
+            </div>
+          ) : (
+            <div className="space-y-8">
+              {posts.map((post) => (
+                <article
+                  key={post.slug}
+                  className="bg-gray-light rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="bg-yellow text-black text-xs font-heading font-bold px-3 py-1 rounded-full">
+                      {post.tag}
+                    </span>
+                    <span className="text-text-light text-sm">{post.date}</span>
+                  </div>
+                  <h2 className="font-heading font-bold text-xl text-black mb-3">
+                    <Link
+                      href={`/news/${post.slug}`}
+                      className="hover:underline"
+                    >
+                      {post.title}
+                    </Link>
+                  </h2>
+                  <p className="text-text-light leading-relaxed mb-4">
+                    {post.excerpt}
+                  </p>
+                  {post.guest && (
+                    <p className="text-text-light text-sm">
+                      Guest: {post.guest}
+                    </p>
+                  )}
+                </article>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </>

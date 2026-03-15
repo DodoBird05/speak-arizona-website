@@ -128,9 +128,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-10 pt-6 text-center text-white/50 text-sm">
-          &copy; {new Date().getFullYear()} Speak Arizona. Powered by District
-          3 Toastmasters.
+        <div className="border-t border-white/20 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-white/50 text-sm">
+          <span>
+            &copy; {new Date().getFullYear()} Speak Arizona. Powered by
+            District 3 Toastmasters.
+          </span>
+          <Link
+            href="/legal"
+            className="text-white/50 hover:text-white/80 hover:underline transition-colors"
+          >
+            Privacy &amp; Terms
+          </Link>
         </div>
       </div>
     </footer>

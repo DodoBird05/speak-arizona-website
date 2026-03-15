@@ -1,63 +1,160 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import StickyTeamCards from "@/components/StickyTeamCards";
+import ListenSubscribe from "@/components/ListenSubscribe";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
-  title: "About Rupesh Parbhoo — Host of Speak Arizona Podcast",
+  title: "The Story Behind Arizona's Public Speaking Podcast",
   description:
-    "Meet Rupesh Parbhoo, Arizona speaker and communication coach. Host of Speak Arizona, the public speaking and leadership podcast powered by District 3 Toastmasters.",
+    "How Speak Arizona became Arizona's only podcast dedicated to public speaking, communication, and leadership. Meet host Rupesh Parbhoo and the team powered by District 3 Toastmasters.",
   alternates: {
     canonical: "https://speakarizona.com/about",
+  },
+  openGraph: {
+    title: "The Story Behind Arizona's Public Speaking Podcast",
+    description:
+      "How Speak Arizona became Arizona's only podcast dedicated to public speaking, communication, and leadership. Meet host Rupesh Parbhoo and the team.",
+    url: "https://speakarizona.com/about",
+    siteName: "Speak Arizona",
+    type: "website",
+    images: [
+      {
+        url: "https://speakarizona.com/images/rupesh-parbhoo-speak-arizona-host-by-marie-feutrier.webp",
+        width: 800,
+        height: 800,
+        alt: "Rupesh Parbhoo, host of Speak Arizona podcast",
+      },
+    ],
   },
 };
 
 export default function About() {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Rupesh Parbhoo",
+    jobTitle: "Podcast Host & Communication Coach",
+    description:
+      "Arizona-based speaker, storyteller, and community leader. Host of Speak Arizona, the public speaking and leadership podcast powered by District 3 Toastmasters.",
+    url: "https://speakarizona.com/about",
+    image:
+      "https://speakarizona.com/images/rupesh-parbhoo-portrait-speak-arizona-by-marie-feutrier.webp",
+    worksFor: {
+      "@type": "Organization",
+      name: "Speak Arizona",
+      url: "https://speakarizona.com",
+    },
+    memberOf: {
+      "@type": "Organization",
+      name: "District 3 Toastmasters",
+      url: "https://d3toastmasters.org",
+    },
+    knowsAbout: [
+      "Public Speaking",
+      "Leadership",
+      "Communication Skills",
+      "Toastmasters",
+    ],
+  };
+
   return (
     <>
-      {/* Hero */}
-      <section className="bg-blue py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 text-center text-white">
-          <h1 className="font-heading font-extrabold text-4xl md:text-5xl mb-6">
-            About Speak Arizona
-          </h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
-            Courageous conversations for better communicators and leaders.
-          </p>
-        </div>
-      </section>
-
-      {/* The Podcast */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      {/* How It Started */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
+          <AnimateOnScroll>
+            <h1 className="font-heading font-extrabold text-4xl md:text-5xl text-black mb-12">
+              The Story Behind Arizona&apos;s Public Speaking Podcast
+            </h1>
+          </AnimateOnScroll>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-heading font-bold text-3xl text-black mb-6">
-                The Podcast
-              </h2>
+              <AnimateOnScroll>
+                <h2 className="font-heading font-bold text-3xl text-black mb-6">
+                  From a Toastmasters Project to Arizona&apos;s Public Speaking Podcast
+                </h2>
+              </AnimateOnScroll>
               <p className="text-text-light text-lg leading-relaxed mb-4">
-                Speak Arizona is a podcast that celebrates the art of
-                communication and leadership. Each episode features candid,
-                courageous conversations with speakers, leaders, and
-                changemakers from across Arizona and beyond.
+                Speak Arizona was created by Sara Mayer, then District Director
+                of District 3 Toastmasters, alongside cohost
+                Serban Mare. Their vision was simple: take the powerful
+                conversations happening inside Toastmasters meetings and bring
+                them to a wider audience — anyone in Arizona and beyond who
+                wanted to become a better communicator and leader.
               </p>
               <p className="text-text-light text-lg leading-relaxed mb-4">
-                Whether you&apos;re a seasoned speaker or someone who&apos;s
-                just finding their voice, this podcast is for you. We explore
-                what it takes to show up, speak up, and lead with authenticity.
+                When Sara and Serban moved on from the project, the podcast
+                could have ended there.
               </p>
               <p className="text-text-light text-lg leading-relaxed">
-                Powered by District 3 Toastmasters, Speak Arizona brings the
-                spirit of community-based leadership development to a wider
-                audience.
+                It didn&apos;t.
               </p>
             </div>
             <div className="flex justify-center">
-              <Image
-                src="/images/cover-square.jpg"
-                alt="Speak Arizona podcast cover"
-                width={450}
-                height={450}
-                className="rounded-3xl shadow-lg"
-              />
+              <div>
+                <div className="overflow-hidden rounded-3xl shadow-lg">
+                  <Image
+                    src="/images/speak-arizona-original-2024-podcast-cover.webp"
+                    alt="Speak Arizona original 2024 podcast cover featuring Sara Mayer and Serban Mare"
+                    width={450}
+                    height={450}
+                    className="w-full h-auto transition-transform duration-500 ease-out hover:scale-110"
+                  />
+                </div>
+                <p className="text-text-light text-sm text-center mt-3">
+                  The original Speak Arizona cover
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Grew */}
+      <section className="bg-white pt-0 pb-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="order-2 md:order-1 flex justify-center">
+              <div className="overflow-hidden rounded-3xl shadow-lg">
+                <Image
+                  src="/images/rupesh-parbhoo-hosting-speak-arizona-by-marie-feutrier.webp"
+                  alt="Rupesh Parbhoo hosting Speak Arizona podcast"
+                  width={800}
+                  height={534}
+                  className="w-full h-auto transition-transform duration-500 ease-out hover:scale-110"
+                />
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
+              <AnimateOnScroll>
+                <h2 className="font-heading font-bold text-3xl text-black mb-6">
+                  How Speak Arizona Became Arizona&apos;s Only Public Speaking
+                  Podcast
+                </h2>
+              </AnimateOnScroll>
+              <p className="text-text-light text-lg leading-relaxed mb-4">
+                Rupesh Parbhoo stepped in as host and brought a new energy to
+                the microphone. Under his leadership, Speak Arizona evolved from
+                a district project into Arizona&apos;s only podcast dedicated to
+                public speaking, communication, and leadership.
+              </p>
+              <p className="text-text-light text-lg leading-relaxed mb-4">
+                The guests got bigger. The conversations got bolder. And the
+                audience grew — because it turns out, people are hungry for
+                honest, courageous conversations about what it really takes to
+                find your voice and lead with purpose.
+              </p>
+              <p className="text-text-light text-lg leading-relaxed">
+                Today, Speak Arizona features everyone from World Champions of
+                Public Speaking to first-time storytellers, delivering weekly
+                episodes packed with real strategies and lessons you can use
+                immediately.
+              </p>
             </div>
           </div>
         </div>
@@ -67,33 +164,25 @@ export default function About() {
       <section className="bg-gray-light py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 flex justify-center">
-              <div className="relative">
-                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-yellow rounded-full opacity-30" />
-                <Image
-                  src="/images/rupesh-mic.jpg"
-                  alt="Rupesh Parbhoo recording Speak Arizona podcast"
-                  width={500}
-                  height={650}
-                  className="relative rounded-3xl shadow-lg"
-                />
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
-              <h2 className="font-heading font-bold text-3xl text-black mb-6">
-                Meet Rupesh Parbhoo
-              </h2>
+            <div>
+              <AnimateOnScroll>
+                <h2 className="font-heading font-bold text-3xl text-black mb-6">
+                  Meet Rupesh Parbhoo — Arizona Speaker &amp; Communication Coach
+                </h2>
+              </AnimateOnScroll>
               <p className="text-text-light text-lg leading-relaxed mb-4">
                 Rupesh Parbhoo is a speaker, storyteller, and community leader
-                based in Arizona. With a passion for helping others find their
-                voice, he created Speak Arizona to spotlight the stories and
-                wisdom of communicators and leaders across the state.
+                based in Arizona. As a dedicated Toastmaster and District 3
+                leader, he understands that great communication isn&apos;t about
+                perfection — it&apos;s about connection. Every episode reflects
+                that philosophy.
               </p>
-              <p className="text-text-light text-lg leading-relaxed mb-4">
-                As a dedicated Toastmaster and District 3 leader, Rupesh
-                understands that great communication isn&apos;t about perfection
-                — it&apos;s about connection. Every episode reflects that
-                philosophy.
+              <p className="text-text-light text-lg leading-relaxed mb-4 bg-yellow/20 rounded-xl p-4 border border-yellow/40">
+                <strong>[RUPESH&apos;S PERSONAL STORY — to be added]</strong>{" "}
+                Rupesh, add a few sentences here about what brought you to
+                Toastmasters and what drives you to host this podcast. What was
+                the turning point? Why does this work matter to you personally?
+                This is the part readers connect with the most.
               </p>
               <p className="text-text-light text-lg leading-relaxed">
                 When he&apos;s not behind the microphone, you&apos;ll find
@@ -101,93 +190,88 @@ export default function About() {
                 and looking for the next great conversation.
               </p>
             </div>
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-yellow rounded-full opacity-30" />
+                <div className="relative overflow-hidden rounded-3xl shadow-lg">
+                  <Image
+                    src="/images/rupesh-parbhoo-portrait-speak-arizona-by-marie-feutrier.webp"
+                    alt="Rupesh Parbhoo, host of Speak Arizona podcast"
+                    width={800}
+                    height={1000}
+                    className="w-full h-auto transition-transform duration-500 ease-out hover:scale-110"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Meet the Team */}
-      <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="font-heading font-bold text-3xl text-black mb-12 text-center">
-            Meet the Team
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="overflow-hidden rounded-2xl shadow-lg mb-4">
-                <Image
-                  src="/images/team-rupesh.jpg"
-                  alt="Rupesh Parbhoo"
-                  width={400}
-                  height={500}
-                  className="w-full h-auto"
-                />
-              </div>
-              <h3 className="font-heading font-bold text-lg text-black">Rupesh Parbhoo</h3>
-              <p className="text-text-light text-sm">Host &amp; Team Leader</p>
-            </div>
-            <div className="text-center">
-              <div className="overflow-hidden rounded-2xl shadow-lg mb-4">
-                <Image
-                  src="/images/team-vincent.jpg"
-                  alt="Vincent Feutrier"
-                  width={400}
-                  height={500}
-                  className="w-full h-auto"
-                />
-              </div>
-              <h3 className="font-heading font-bold text-lg text-black">Vincent Feutrier</h3>
-              <p className="text-text-light text-sm">Video Editor</p>
-            </div>
-            <div className="text-center">
-              <div className="overflow-hidden rounded-2xl shadow-lg mb-4">
-                <Image
-                  src="/images/team-matt.jpg"
-                  alt="Matthew Malan"
-                  width={400}
-                  height={500}
-                  className="w-full h-auto"
-                />
-              </div>
-              <h3 className="font-heading font-bold text-lg text-black">Matthew Malan</h3>
-              <p className="text-text-light text-sm">Video Editor</p>
-            </div>
-            <div className="text-center">
-              <div className="overflow-hidden rounded-2xl shadow-lg mb-4">
-                <Image
-                  src="/images/team-marie.jpg"
-                  alt="Marie Feutrier"
-                  width={400}
-                  height={500}
-                  className="w-full h-auto"
-                />
-              </div>
-              <h3 className="font-heading font-bold text-lg text-black">Marie Feutrier</h3>
-              <p className="text-text-light text-sm">Public Relations Manager</p>
-            </div>
-          </div>
+      {/* Team */}
+      <section className="bg-white py-12">
+        <div className="max-w-6xl mx-auto px-6 mb-8">
+          <AnimateOnScroll>
+            <h2 className="font-heading font-bold text-3xl text-black text-center">
+              The Team Behind the #1 Communication &amp; Leadership Podcast in
+              Arizona
+            </h2>
+          </AnimateOnScroll>
         </div>
+        <StickyTeamCards />
       </section>
 
       {/* District 3 */}
       <section className="bg-white py-20">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="font-heading font-bold text-3xl text-black mb-6">
-            Powered by District 3 Toastmasters
-          </h2>
-          <p className="text-text-light text-lg leading-relaxed mb-8">
-            District 3 Toastmasters serves clubs across Arizona, helping
-            members develop communication and leadership skills in a supportive,
-            community-driven environment. Speak Arizona extends that mission
-            beyond the club meeting room.
+        <div className="max-w-4xl mx-auto px-6">
+          <AnimateOnScroll>
+            <h2 className="font-heading font-bold text-3xl text-black mb-8">
+              Powered by District 3 Toastmasters — Arizona&apos;s Public Speaking Community
+            </h2>
+          </AnimateOnScroll>
+          <p className="text-text-light text-lg leading-relaxed mb-4">
+            Speak Arizona is proudly produced by{" "}
+            <a
+              href="https://d3toastmasters.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue underline hover:text-blue-light transition-colors"
+            >
+              District 3 Toastmasters
+            </a>
+            , serving over 125 clubs across Arizona, New Mexico, and West Texas.
+            Toastmasters is the world&apos;s leading organization for developing
+            public speaking, communication, and leadership skills through a
+            supportive, peer-driven community.
           </p>
-          <a
-            href="https://d3toastmasters.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-blue text-white font-heading font-bold px-6 py-3 rounded-full hover:bg-blue-light transition-colors"
-          >
-            Visit District 3
-          </a>
+          <p className="text-text-light text-lg leading-relaxed mb-4">
+            With nearly 100 years of history, Toastmasters has helped millions
+            of people around the world find their voice and grow as leaders.
+            District 3 carries that mission forward in the Southwest — and Speak
+            Arizona extends it beyond the meeting room to anyone with an
+            internet connection and a desire to grow.
+          </p>
+          <p className="text-text-light text-lg leading-relaxed">
+            Whether you&apos;re a Toastmasters member or you&apos;ve never
+            heard of the organization, this podcast is for you.
+          </p>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-gray-light py-20">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <AnimateOnScroll>
+            <h2 className="font-heading font-bold text-3xl text-black mb-6">
+              Listen to Speak Arizona — Weekly Public Speaking Podcast
+            </h2>
+          </AnimateOnScroll>
+          <p className="text-text-light text-lg leading-relaxed mb-10">
+            Speak Arizona is available wherever you listen to podcasts. New
+            episodes drop weekly — subscribe so you never miss a courageous
+            conversation.
+          </p>
+          <ListenSubscribe />
         </div>
       </section>
     </>
