@@ -231,24 +231,20 @@ export default function Contact() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-blue py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 text-center text-white">
-          <h1 className="font-heading font-extrabold text-4xl md:text-5xl mb-6">
-            Get in Touch
-          </h1>
-          <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
-            Have a question, want to be a guest, or just want to say hello?
-            We&apos;d love to hear from you.
-          </p>
-        </div>
-      </section>
-
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Left — Form */}
-            <div>{formContent}</div>
+            <div>
+              <h1 className="font-heading font-extrabold text-4xl md:text-5xl text-black mb-3">
+                Get in Touch
+              </h1>
+              <p className="text-text-light text-lg mb-10">
+                Have a question, want to be a guest, or just want to say hello?
+                We&apos;d love to hear from you.
+              </p>
+              {formContent}
+            </div>
 
             {/* Right — Photo + Follow Us (desktop) */}
             <div className="hidden md:flex flex-col gap-8">

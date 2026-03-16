@@ -30,14 +30,14 @@ export async function generateMetadata({
       siteName: "Speak Arizona",
       type: "article",
       publishedTime: new Date(post.date).toISOString(),
-      ...(post.image && {
-        images: [
-          {
-            url: `https://speakarizona.com${post.image}`,
-            alt: post.imageAlt || post.title,
-          },
-        ],
-      }),
+      images: [
+        {
+          url: post.image
+            ? `https://speakarizona.com${post.image}`
+            : "https://speakarizona.com/images/speak-arizona-default-og.webp",
+          alt: post.imageAlt || post.title,
+        },
+      ],
     },
   };
 }
@@ -59,9 +59,9 @@ export default async function BlogPost({
     headline: post.title,
     description: post.excerpt,
     datePublished: new Date(post.date).toISOString(),
-    ...(post.image && {
-      image: `https://speakarizona.com${post.image}`,
-    }),
+    image: post.image
+      ? `https://speakarizona.com${post.image}`
+      : "https://speakarizona.com/images/speak-arizona-default-og.webp",
     author: {
       "@type": "Organization",
       name: "Speak Arizona",
@@ -87,7 +87,7 @@ export default async function BlogPost({
       />
 
       {/* Hero */}
-      <section className="bg-blue py-16 md:py-24">
+      <section className="py-16 md:py-24" style={{ backgroundImage: "url('/images/gradient-square.webp')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="max-w-4xl mx-auto px-6 text-white">
           <div className="flex items-center gap-3 mb-6">
             <span className="bg-yellow text-black text-xs font-heading font-bold px-3 py-1 rounded-full">
@@ -108,13 +108,13 @@ export default async function BlogPost({
       {post.image && (
         <section className="bg-white pt-12">
           <div className="max-w-3xl mx-auto px-6">
-            <div className="overflow-hidden rounded-2xl shadow-lg">
+            <div className="overflow-hidden rounded-2xl shadow-lg" style={{ aspectRatio: "5/4" }}>
               <Image
                 src={post.image}
                 alt={post.imageAlt || post.title}
                 width={800}
-                height={1000}
-                className="w-full h-auto"
+                height={640}
+                className="w-full h-full object-cover object-top"
               />
             </div>
             <p className="text-black/30 text-xs mt-2 flex items-center gap-1">

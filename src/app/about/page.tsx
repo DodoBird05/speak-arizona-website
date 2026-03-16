@@ -34,9 +34,9 @@ export default function About() {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Rupesh Parbhoo",
-    jobTitle: "Podcast Host & Communication Coach",
+    jobTitle: "Podcast Host, Communication Coach & Yoga Instructor",
     description:
-      "Arizona-based speaker, storyteller, and community leader. Host of Speak Arizona, the public speaking and leadership podcast powered by District 3 Toastmasters.",
+      "Arizona-based speaker, podcast host, communication coach, and yoga instructor. Host of Speak Arizona, the public speaking and leadership podcast powered by District 3 Toastmasters.",
     url: "https://speakarizona.com/about",
     image:
       "https://speakarizona.com/images/rupesh-parbhoo-portrait-speak-arizona-by-marie-feutrier.webp",
@@ -64,14 +64,18 @@ export default function About() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
+      {/* Hero */}
+      <section className="py-16 md:py-24" style={{ backgroundImage: "url('/images/gradient-square.webp')", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div className="max-w-6xl mx-auto px-6 text-center text-white">
+          <h1 className="font-heading font-extrabold text-4xl md:text-5xl">
+            The Story Behind Arizona&apos;s Public Speaking Podcast
+          </h1>
+        </div>
+      </section>
+
       {/* How It Started */}
       <section className="bg-white py-20">
         <div className="max-w-6xl mx-auto px-6">
-          <AnimateOnScroll>
-            <h1 className="font-heading font-extrabold text-4xl md:text-5xl text-black mb-12">
-              The Story Behind Arizona&apos;s Public Speaking Podcast
-            </h1>
-          </AnimateOnScroll>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <AnimateOnScroll>
@@ -171,23 +175,19 @@ export default function About() {
                 </h2>
               </AnimateOnScroll>
               <p className="text-text-light text-lg leading-relaxed mb-4">
-                Rupesh Parbhoo is a speaker, storyteller, and community leader
-                based in Arizona. As a dedicated Toastmaster and District 3
-                leader, he understands that great communication isn&apos;t about
-                perfection — it&apos;s about connection. Every episode reflects
-                that philosophy.
+                Rupesh Parbhoo is an Arizona-based speaker, podcast host, communication coach, and yoga instructor passionate about helping people lead, speak, and connect more authentically.
               </p>
-              <p className="text-text-light text-lg leading-relaxed mb-4 bg-yellow/20 rounded-xl p-4 border border-yellow/40">
-                <strong>[RUPESH&apos;S PERSONAL STORY — to be added]</strong>{" "}
-                Rupesh, add a few sentences here about what brought you to
-                Toastmasters and what drives you to host this podcast. What was
-                the turning point? Why does this work matter to you personally?
-                This is the part readers connect with the most.
+              <p className="text-text-light text-lg leading-relaxed mb-4">
+                His path to communication started in 2017, working with engineers in Papua New Guinea. Their technical ability was outstanding, but Rupesh saw firsthand that technical skill alone wasn&apos;t enough — communication was what helped people build influence, create impact, and grow lasting careers. A local engineer introduced him to Toastmasters, and what began as something he encouraged others to do became an important part of his own leadership journey.
+              </p>
+              <p className="text-text-light text-lg leading-relaxed mb-4">
+                That perspective is also shaped by his work as a yoga instructor. Teaching yoga strengthened his ability to listen with intention, stay present, and connect beyond words — reinforcing the lesson that now defines his podcast: great communication is not about sounding perfect, but about being real.
               </p>
               <p className="text-text-light text-lg leading-relaxed">
-                When he&apos;s not behind the microphone, you&apos;ll find
-                Rupesh mentoring emerging speakers, organizing community events,
-                and looking for the next great conversation.
+                Through Speak Arizona, Rupesh creates space for meaningful conversations that help people become stronger communicators, more confident leaders, and more authentic versions of themselves.
+              </p>
+              <p className="text-text-light text-lg leading-relaxed">
+                <a href="/news/why-rupesh-hosts-speak-arizona" className="text-blue underline hover:text-blue-light transition-colors">Read his full story</a>.
               </p>
             </div>
             <div className="flex justify-center">

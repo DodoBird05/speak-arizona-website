@@ -21,7 +21,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
-              Courageous conversations for better communicators and leaders.
+              Courageous conversations to lead authentically, inspire action, and find your voice.
               Powered by District 3 Toastmasters.
             </p>
           </div>

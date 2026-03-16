@@ -59,3 +59,13 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
+/* Blog post images: cap portrait/vertical images on desktop */
+@media (min-width: 768px) {
+  .blog-content img {
+    max-height: 500px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+

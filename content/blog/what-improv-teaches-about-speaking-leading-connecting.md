@@ -4,6 +4,8 @@ date: "March 3, 2026"
 excerpt: "How improv builds better communicators, stronger leaders, and more authentic connections. A two-part conversation with Bridge Improv Theater."
 tag: "Communication"
 guest: "Jess Klemm & David Raftery (Bridge Improv Theater) | Co-host: Rachel Perez (Composion)"
+image: "/images/improv-actors-on-stage.webp"
+imageAlt: "Improv actors taking a bow on stage after a performance at Bridge Improv Theater"
 ---
 
 All of a sudden, you're a cat who is also an astronaut. And you're just like — all right, let's have fun.

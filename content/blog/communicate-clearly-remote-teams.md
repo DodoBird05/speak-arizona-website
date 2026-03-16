@@ -4,6 +4,8 @@ date: "February 24, 2026"
 excerpt: "Leadership coach Kelly Soifer breaks down why remote teams overcommunicate in meetings and undercommunicate everywhere else — and how to fix it."
 tag: "Leadership"
 guest: "Kelly Soifer, Leadership Development & Career Coach"
+image: "/images/remote-team-communication.webp"
+imageAlt: "Remote team collaborating on a video call with multiple participants on screen"
 ---
 
 Here's a phrase that should never be necessary but gets said in offices everywhere: "This could have been an email."

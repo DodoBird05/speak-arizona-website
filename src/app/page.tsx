@@ -168,12 +168,13 @@ export default async function Home() {
               <p
                 className="font-heading font-bold text-white text-3xl md:text-4xl lg:text-5xl uppercase"
               >
-                {["COURAGEOUS", "CONVERSATIONS", "FOR"].map((word) => (
+                {["COURAGEOUS", "CONVERSATIONS", "TO"].map((word) => (
                   <span key={word} className="inline-block transition-transform duration-200 ease-out hover:scale-110 cursor-default mr-[0.3em]">{word}</span>
                 ))}
-                <span className="inline-block transition-transform duration-200 ease-out hover:scale-110 cursor-default mr-[0.3em]" style={{ backgroundColor: "#F2DF74", color: "#000", padding: "0 4px" }}>BETTER COMMUNICATORS</span>
+                <span className="inline-block transition-transform duration-200 ease-out hover:scale-110 cursor-default mr-[0.3em]" style={{ backgroundColor: "#F2DF74", color: "#000", padding: "0 4px" }}>LEAD AUTHENTICALLY</span>
+                <span className="inline-block transition-transform duration-200 ease-out hover:scale-110 cursor-default mr-[0.3em]" style={{ backgroundColor: "#F2DF74", color: "#000", padding: "0 4px" }}>INSPIRE ACTION</span>
                 <span className="inline-block transition-transform duration-200 ease-out hover:scale-110 cursor-default mr-[0.3em]">AND</span>
-                <span className="inline-block transition-transform duration-200 ease-out hover:scale-110 cursor-default mr-[0.3em]" style={{ backgroundColor: "#F2DF74", color: "#000", padding: "0 4px" }}>LEADERS</span>
+                <span className="inline-block transition-transform duration-200 ease-out hover:scale-110 cursor-default mr-[0.3em]" style={{ backgroundColor: "#F2DF74", color: "#000", padding: "0 4px" }}>FIND YOUR VOICE</span>
               </p>
             </div>
           </div>
@@ -207,7 +208,7 @@ export default async function Home() {
           <p
             className="font-heading font-bold text-black text-3xl uppercase"
           >
-            COURAGEOUS CONVERSATIONS FOR <span style={{ backgroundColor: "#F2DF74", padding: "0 4px", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}>BETTER COMMUNICATORS AND LEADERS</span>
+            COURAGEOUS CONVERSATIONS TO <span style={{ backgroundColor: "#F2DF74", padding: "0 4px", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}>LEAD AUTHENTICALLY, INSPIRE ACTION, AND FIND YOUR VOICE</span>
           </p>
         </div>
         {/* Description — visible on all devices */}
@@ -282,14 +283,10 @@ export default async function Home() {
                 </h2>
               </AnimateOnScroll>
               <p className="text-black text-lg leading-relaxed mb-4">
-                Rupesh Parbhoo is a speaker, leader, and storyteller who
-                believes that the best conversations happen when people are
-                willing to be courageous. As a Toastmasters leader in Arizona, he has spent years helping professionals find their voice, own their message, and step into leadership roles with confidence.
+                Rupesh Parbhoo is a speaker, communication coach, and yoga instructor who believes that great communication is not about sounding perfect — it&apos;s about being real. With more than 15 years across corporate and startup environments, he has seen firsthand that communication is often the difference between simply managing work and truly inspiring people.
               </p>
               <p className="text-black text-lg leading-relaxed mb-4">
-                Through Speak Arizona, he brings together voices from across the
-                state to explore what it means to communicate with purpose,
-                lead with empathy, and show up authentically.
+                Through Speak Arizona, he creates space for meaningful conversations that help people become stronger communicators, more confident leaders, and more authentic versions of themselves.
               </p>
               <p className="text-black text-lg leading-relaxed mb-8">
                 From World Champions of Public Speaking to 10-year-old leadership prodigies, Rupesh&apos;s guest list reflects his belief that great communication can come from anywhere — and that everyone has a story worth sharing.
@@ -403,7 +400,7 @@ export default async function Home() {
             {/* Job Interviews */}
             <div
               className="audience-card flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
-              style={{ width: "260px", minHeight: "300px", background: "linear-gradient(135deg, #004165 0%, #005a8c 100%)" }}
+              style={{ width: "260px", minHeight: "300px", backgroundImage: "url('/images/gradient-card.webp')", backgroundSize: "cover", backgroundPosition: "center" }}
             >
               <div>
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4">
@@ -443,7 +440,7 @@ export default async function Home() {
             {/* Entrepreneurs */}
             <div
               className="audience-card flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
-              style={{ width: "260px", minHeight: "300px", background: "linear-gradient(135deg, #003350 0%, #004165 100%)" }}
+              style={{ width: "260px", minHeight: "300px", backgroundImage: "url('/images/gradient-card.webp')", backgroundSize: "cover", backgroundPosition: "center" }}
             >
               <div>
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4">
@@ -483,7 +480,7 @@ export default async function Home() {
             {/* Introverts */}
             <div
               className="audience-card flex-shrink-0 rounded-2xl p-6 flex flex-col justify-between card-hover"
-              style={{ width: "260px", minHeight: "300px", background: "linear-gradient(135deg, #004165 0%, #005a8c 100%)" }}
+              style={{ width: "260px", minHeight: "300px", backgroundImage: "url('/images/gradient-card.webp')", backgroundSize: "cover", backgroundPosition: "center" }}
             >
               <div>
                 <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-4">
