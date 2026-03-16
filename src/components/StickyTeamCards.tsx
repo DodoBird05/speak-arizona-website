@@ -15,10 +15,11 @@ type TeamMember = {
 const team: TeamMember[] = [
   {
     name: "Matthew Malan",
-    role: "Video Editor",
+    role: "Marketing & Video",
     image: "/images/matthew-malan-video-editor-speak-arizona-by-marie-feutrier.webp",
     description:
-      "Matthew handles video editing and content creation for Speak Arizona. He works closely with the team to produce engaging short-form clips, highlight reels, and promotional content that extends each episode's reach across platforms like TikTok, Instagram, and LinkedIn.",
+      "Matthew Malan is a marketing strategist and content creator who brings a data-driven edge to the Speak Arizona creative team. As Marketing Manager at Vemo Smart Energy, he leads an eight-person team focused on paid acquisition and lead generation. He channels that same strategic mindset into content — editing and shaping raw podcast episodes into sharp highlight reels for TikTok, Instagram, and LinkedIn. The result: every conversation is packaged to reach the right audience, on the right platform.",
+    linkedin: "https://www.linkedin.com/in/matthew-malan8",
   },
   {
     name: "Vincent Feutrier",

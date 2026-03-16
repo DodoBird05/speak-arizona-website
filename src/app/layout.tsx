@@ -58,6 +58,13 @@ export const metadata: Metadata = {
       "Weekly podcast on public speaking, leadership, and communication. Hosted by Rupesh Parbhoo.",
     images: ["https://speakarizona.com/images/speak-arizona-podcast-public-speaking-leadership-by-marie-feutrier.webp"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   alternates: {
     canonical: "https://speakarizona.com",
   },

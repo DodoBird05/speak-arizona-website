@@ -17,7 +17,7 @@ But that is exactly what happened.
 
 In 2017, I was working in Papua New Guinea with a group of exceptionally talented engineers. Their technical ability was outstanding, but for many of them, English was not their first language. One of the local engineers introduced me to Toastmasters, and it immediately clicked for me. I could see that technical skill alone was not enough. Communication was what helped people build influence, create impact, and grow lasting careers.
 
-At first, I stayed in the background. I would sit in the back of the room and tell myself I was there to support others and "let them practice." But over time, I realized Toastmasters was helping me just as much as anyone else. It challenged me to speak up, become more intentional, and grow in ways I had not expected.
+At first, I stayed in the background. I would sit in the back of the room and tell myself I was there to support others and "let them practice." But over time, I realized Toastmasters was helping me just as much as anyone else. It challenged me to speak up, become more intentional, and grow in ways I had not expected. Matt Malan's story reminds me of that — he went [from a childhood stutter to competing on stage](/news/from-stutter-to-stage-matt-malan), and it started with the same decision to just show up.
 
 What began as something I encouraged others to do eventually became an important part of my own leadership journey.
 
@@ -51,7 +51,7 @@ It reinforced a lesson that now defines my podcast and broader brand: great comm
 
 I joined the podcast on a whim. Sara Mayer, the previous District 3 Director, suggested it, and I said yes without thinking too hard about it.
 
-But as time went on, members changed, conversations evolved, and I began to see the real power of what we were building. It was not just about recording interviews. It was about capturing authentic conversations, sharing stories, and creating space for people to connect in a more human way.
+But as time went on, members changed, conversations evolved, and I began to see the real power of what we were building. It was not just about recording interviews. It was about capturing authentic conversations, sharing stories, and creating space for people to connect in a more human way. Our conversation with [Bridge Improv Theater](/news/what-improv-teaches-about-speaking-leading-connecting) is a perfect example — that episode showed me how much people open up when the format is right.
 
 That was the turning point for me. I started to enjoy the storytelling side of it more and more, and I saw how much meaning there was in helping people share their voice.
 
@@ -67,10 +67,10 @@ I believe authentic communication can change lives. It can open doors, build con
 
 Hosting Speak Arizona gives me a way to contribute to that in a meaningful way. Every week, I sit down with someone who has something worth sharing — a lesson learned the hard way, a perspective that challenges assumptions, a story that makes you rethink how you show up.
 
-My mission is simple: to explore the human side of communication and help others find the courage to use their voice.
+My mission is simple: to explore the human side of communication and help others find the courage to use their voice. If you are not sure where to start, our guide on [how to start a speech](/news/how-to-start-a-speech-10-mistakes) is a good first step.
 
 ![Rupesh Parbhoo celebrating a Best Speaker award at Dobson Ranch Toastmasters](/images/rupesh-parbhoo-best-speaker-dobson-ranch-toastmasters.webp)
 
 ---
 
-New episodes drop every week. Subscribe so you never miss a courageous conversation.
+New episodes drop every week. Subscribe so you never miss a courageous conversation. Want to learn more about the podcast? [Read our story](/about).
