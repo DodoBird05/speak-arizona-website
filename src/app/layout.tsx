@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -125,6 +126,18 @@ export default function RootLayout({
             }),
           }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-61S8X9W46R"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-61S8X9W46R');
+          `}
+        </Script>
       </head>
       <body
         className={`${inter.variable} ${sourceSans.variable} antialiased`}
