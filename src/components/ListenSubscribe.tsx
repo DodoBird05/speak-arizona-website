@@ -13,7 +13,7 @@ export default function ListenSubscribe() {
         className="md:grid-cols-3"
       >
         <a
-          href="https://open.spotify.com/show/speak-arizona"
+          href="https://open.spotify.com/show/53gLq1FiWjTgPR4q9n7Kc4"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-black rounded-2xl p-4 flex items-center justify-center gap-3 hover:bg-black/80 card-hover"
@@ -33,7 +33,7 @@ export default function ListenSubscribe() {
           </div>
         </a>
         <a
-          href="https://podcasts.apple.com/us/podcast/speak-arizona"
+          href="https://podcasts.apple.com/us/podcast/speak-arizona/id1463493084"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-black rounded-2xl p-4 flex items-center justify-center gap-3 hover:bg-black/80 card-hover"

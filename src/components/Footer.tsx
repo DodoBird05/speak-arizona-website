@@ -62,7 +62,7 @@ export default function Footer() {
             <h3 className="font-heading font-bold mb-4">Listen On</h3>
             <div className="space-y-2">
               <a
-                href="https://open.spotify.com/show/speak-arizona"
+                href="https://open.spotify.com/show/53gLq1FiWjTgPR4q9n7Kc4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-white/70 hover:text-yellow transition-colors"
@@ -70,7 +70,7 @@ export default function Footer() {
                 Spotify
               </a>
               <a
-                href="https://podcasts.apple.com/us/podcast/speak-arizona"
+                href="https://podcasts.apple.com/us/podcast/speak-arizona/id1463493084"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-white/70 hover:text-yellow transition-colors"

@@ -314,7 +314,7 @@ export default async function Home() {
             Each week, Speak Arizona brings you conversations on
           </p>
           <div className="topic-cards-grid">
-            <div className="bg-gray-light rounded-2xl p-4 flex flex-col items-center text-center card-hover" style={{ aspectRatio: "1/1" }}>
+            <div className="bg-gray-light rounded-2xl p-4 flex flex-col items-center text-center card-hover">
               <div className="w-10 h-10 bg-yellow rounded-full flex items-center justify-center mb-2">
                 <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
@@ -323,7 +323,7 @@ export default async function Home() {
               <h3 className="font-heading font-bold text-sm text-black mb-1">Public Speaking Tips</h3>
               <p className="text-text-light text-xs leading-relaxed">Practical techniques to improve your presentations, speeches, and everyday communication.</p>
             </div>
-            <div className="bg-gray-light rounded-2xl p-4 flex flex-col items-center text-center card-hover" style={{ aspectRatio: "1/1" }}>
+            <div className="bg-gray-light rounded-2xl p-4 flex flex-col items-center text-center card-hover">
               <div className="w-10 h-10 bg-yellow rounded-full flex items-center justify-center mb-2">
                 <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -332,7 +332,7 @@ export default async function Home() {
               <h3 className="font-heading font-bold text-sm text-black mb-1">Interview &amp; Career Communication</h3>
               <p className="text-text-light text-xs leading-relaxed">Strategies to stand out in job interviews, sell yourself authentically, and navigate career transitions.</p>
             </div>
-            <div className="bg-gray-light rounded-2xl p-4 flex flex-col items-center text-center card-hover" style={{ aspectRatio: "1/1" }}>
+            <div className="bg-gray-light rounded-2xl p-4 flex flex-col items-center text-center card-hover">
               <div className="w-10 h-10 bg-yellow rounded-full flex items-center justify-center mb-2">
                 <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -341,7 +341,7 @@ export default async function Home() {
               <h3 className="font-heading font-bold text-sm text-black mb-1">Leadership in Practice</h3>
               <p className="text-text-light text-xs leading-relaxed">Real-world leadership skills for managing teams, navigating conflict, and building influence.</p>
             </div>
-            <div className="bg-gray-light rounded-2xl p-4 flex flex-col items-center text-center card-hover" style={{ aspectRatio: "1/1" }}>
+            <div className="bg-gray-light rounded-2xl p-4 flex flex-col items-center text-center card-hover">
               <div className="w-10 h-10 bg-yellow rounded-full flex items-center justify-center mb-2">
                 <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />

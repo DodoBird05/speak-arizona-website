@@ -35,10 +35,17 @@ h1, h2, h3, h4, h5, h6 {
   gap: 12px;
 }
 
+.topic-cards-grid > * {
+  aspect-ratio: auto;
+}
+
 @media (min-width: 768px) {
   .topic-cards-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 16px;
+  }
+  .topic-cards-grid > * {
+    aspect-ratio: 1/1;
   }
 }
 
