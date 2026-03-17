@@ -155,7 +155,7 @@ export default async function Home() {
             src="/images/speak-arizona-podcast-public-speaking-leadership-by-marie-feutrier.webp"
             alt="Rupesh Parbhoo, host of Speak Arizona podcast"
             width={1400}
-            height={600}
+            height={627}
             priority
             className="w-full h-auto"
           />
@@ -295,7 +295,7 @@ export default async function Home() {
                 href="/about"
                 className="inline-block bg-yellow text-black font-heading font-bold text-sm px-6 py-3 rounded-full hover:bg-yellow-light transition-colors"
               >
-                LEARN MORE
+                LEARN MORE ABOUT SPEAK ARIZONA
               </Link>
             </div>
           </div>

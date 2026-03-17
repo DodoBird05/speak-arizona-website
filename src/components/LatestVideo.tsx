@@ -38,7 +38,7 @@ export default function LatestVideo({ video }: { video: Video }) {
         <iframe
           width="100%"
           height="100%"
-          src={`https://www.youtube.com/embed/${video.videoId}`}
+          src={`https://www.youtube-nocookie.com/embed/${video.videoId}`}
           title={video.title}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
