@@ -18,6 +18,9 @@ const sourceSans = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "NKTRu2mFMXokSvQ0Nfvo6nntxWnVnq4KD2VumEeEhHk",
+  },
   title: {
     default: "Speak Arizona | Public Speaking & Communication Skills Podcast",
     template: "%s | Speak Arizona Podcast",
