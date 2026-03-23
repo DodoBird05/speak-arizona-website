@@ -15,6 +15,8 @@ export type BlogPost = {
   guest?: string;
   image?: string;
   imageAlt?: string;
+  imageCredit?: string;
+  imagePosition?: string;
   content: string;
 };
 
@@ -40,6 +42,8 @@ export function getAllPosts(): BlogPostMeta[] {
       guest: data.guest || undefined,
       image: data.image || undefined,
       imageAlt: data.imageAlt || undefined,
+      imageCredit: data.imageCredit || undefined,
+      imagePosition: data.imagePosition || undefined,
     };
   });
 
@@ -84,6 +88,8 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     guest: data.guest || undefined,
     image: data.image || undefined,
     imageAlt: data.imageAlt || undefined,
+    imageCredit: data.imageCredit || undefined,
+    imagePosition: data.imagePosition || undefined,
     content,
   };
 }

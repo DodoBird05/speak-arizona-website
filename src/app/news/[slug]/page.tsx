@@ -114,13 +114,19 @@ export default async function BlogPost({
                 alt={post.imageAlt || post.title}
                 width={800}
                 height={640}
-                className="w-full h-full object-cover object-top"
+                className={`w-full h-full object-cover ${post.imagePosition === 'center' ? 'object-center' : 'object-top'}`}
               />
             </div>
-            <p className="text-black/30 text-xs mt-2 flex items-center gap-1">
-              <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2" /><path d="M8.5 6L10 3h4l1.5 3" /><circle cx="12" cy="13" r="3.5" /></svg>
-              <a href="https://headshotsbymarie.com" target="_blank" rel="noopener noreferrer" className="hover:text-black/50 transition-colors">Marie Feutrier — headshotsbymarie.com</a>
-            </p>
+            {(post.imageCredit || post.image?.includes('-by-marie-feutrier')) && (
+              <p className="text-black/30 text-xs mt-2 flex items-center gap-1">
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2" /><path d="M8.5 6L10 3h4l1.5 3" /><circle cx="12" cy="13" r="3.5" /></svg>
+                {post.imageCredit ? (
+                  <span>{post.imageCredit}</span>
+                ) : (
+                  <a href="https://headshotsbymarie.com" target="_blank" rel="noopener noreferrer" className="hover:text-black/50 transition-colors">Marie Feutrier — headshotsbymarie.com</a>
+                )}
+              </p>
+            )}
           </div>
         </section>
       )}
