@@ -4,6 +4,8 @@ date: "February 24, 2026"
 excerpt: "Leadership coach Kelly Soifer breaks down why remote teams overcommunicate in meetings and undercommunicate everywhere else — and how to fix it."
 tag: "Leadership"
 guest: "Kelly Soifer, Leadership Development & Career Coach"
+youtubeUrl: "https://youtu.be/6saHzP3dpks"
+quote: "The worst way to use a meeting is reporting. Put all that in an asynchronous report and have everyone read it before they come to the meeting — then you can discuss what action items need to emerge."
 image: "/images/remote-team-communication.webp"
 imageAlt: "Remote team collaborating on a video call with multiple participants on screen"
 ---
@@ -140,4 +142,4 @@ New episodes drop every week. Subscribe so you never miss a courageous conversat
 
 ---
 
-*Speak Arizona is powered by District 3 Toastmasters, serving Arizona, New Mexico, and West Texas.*
+*Speak Arizona is powered by [District 3 Toastmasters](https://d3toastmasters.org), serving Arizona, New Mexico, and West Texas.*

@@ -4,6 +4,8 @@ date: "February 10, 2026"
 excerpt: "Matt Malan went from a childhood stutter and 15 years of silence to competing in the Toastmasters International Speech Contest. This is the story of how he rewrote the beliefs that held him back."
 tag: "Leadership"
 guest: "Matthew (Matt) Malan"
+youtubeUrl: "https://youtu.be/0q1RjuuJmPk"
+quote: "To speak is to be human."
 image: "/images/matt-malan-best-speaker-toastmasters-area-contest-by-marie-feutrier.webp"
 imageAlt: "Matt Malan receiving Best Speaker award at the Toastmasters Area Contest"
 ---
@@ -161,4 +163,4 @@ New episodes drop every week. Subscribe so you never miss a courageous conversat
 
 ---
 
-*Speak Arizona is powered by District 3 Toastmasters, serving Arizona, New Mexico, and West Texas.*
+*Speak Arizona is powered by [District 3 Toastmasters](https://d3toastmasters.org), serving Arizona, New Mexico, and West Texas.*

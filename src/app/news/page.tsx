@@ -28,11 +28,11 @@ export default function Blog() {
             </h1>
             <Link href={`/news/${featuredPost.slug}`} className="block group">
               <div className="grid md:grid-cols-2 gap-8 md:items-center">
-                {featuredPost.image && (
+                {(featuredPost.cardImage || featuredPost.image) && (
                   <div className="overflow-hidden rounded-2xl shadow-lg aspect-[16/9] md:aspect-[5/4]">
                     <Image
-                      src={featuredPost.image}
-                      alt={featuredPost.imageAlt || featuredPost.title}
+                      src={featuredPost.cardImage || featuredPost.image!}
+                      alt={featuredPost.cardImageAlt || featuredPost.imageAlt || featuredPost.title}
                       width={1200}
                       height={675}
                       className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
@@ -88,11 +88,11 @@ export default function Blog() {
                   key={post.slug}
                   className="bg-gray-light rounded-2xl p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] md:flex md:gap-8 md:items-center"
                 >
-                  {post.image && (
+                  {(post.cardImage || post.image) && (
                     <div className="hidden md:block md:flex-shrink-0 md:w-48 overflow-hidden rounded-xl">
                       <Image
-                        src={post.image}
-                        alt={post.imageAlt || post.title}
+                        src={post.cardImage || post.image!}
+                        alt={post.cardImageAlt || post.imageAlt || post.title}
                         width={400}
                         height={320}
                         className="w-full h-full object-cover"

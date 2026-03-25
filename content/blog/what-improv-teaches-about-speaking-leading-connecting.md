@@ -180,4 +180,4 @@ New episodes drop every week. Subscribe so you never miss a courageous conversat
 
 ---
 
-*Speak Arizona is powered by District 3 Toastmasters, serving Arizona, New Mexico, and West Texas.*
+*Speak Arizona is powered by [District 3 Toastmasters](https://d3toastmasters.org), serving Arizona, New Mexico, and West Texas.*

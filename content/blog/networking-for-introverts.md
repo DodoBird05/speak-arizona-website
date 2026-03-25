@@ -4,6 +4,8 @@ date: "February 3, 2026"
 excerpt: "Rachel Perez shares how introverts can network authentically — without the elevator pitch, the forced small talk, or pretending to be someone they're not."
 tag: "Communication"
 guest: "Rachel Perez, Owner & Creative Director of Composion"
+youtubeUrl: "https://youtu.be/DiXBw2STuh0"
+quote: "Networking is a learned skill just like any professional at anything. A basketball player doesn't just wake up knowing how to play basketball. The more you practice, the better you get and the easier it feels."
 image: "/images/rachel-perez-networking-introverts-speak-arizona-by-marie-feutrier.webp"
 imageAlt: "Rachel Perez, brand designer and guest on Speak Arizona podcast"
 ---
@@ -124,18 +126,4 @@ She's also a speaker on networking and introversion, having presented at Phoenix
 
 ---
 
-## Listen to the Full Episode
-
-Catch the full conversation on your favorite platform:
-
-- [Watch on YouTube](https://youtu.be/DiXBw2STuh0)
-- [Listen on Spotify](https://open.spotify.com/show/speak-arizona)
-- [Listen on Apple Podcasts](https://podcasts.apple.com/us/podcast/speak-arizona)
-
-New episodes drop every week. Subscribe so you never miss a courageous conversation.
-
-[Learn more about the Speak Arizona team →](/about)
-
----
-
-*Speak Arizona is powered by District 3 Toastmasters, serving Arizona, New Mexico, and West Texas.*
+*Speak Arizona is powered by [District 3 Toastmasters](https://d3toastmasters.org), serving Arizona, New Mexico, and West Texas.*

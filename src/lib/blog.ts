@@ -17,6 +17,10 @@ export type BlogPost = {
   imageAlt?: string;
   imageCredit?: string;
   imagePosition?: string;
+  cardImage?: string;
+  cardImageAlt?: string;
+  youtubeUrl?: string;
+  quote?: string;
   content: string;
 };
 
@@ -44,6 +48,10 @@ export function getAllPosts(): BlogPostMeta[] {
       imageAlt: data.imageAlt || undefined,
       imageCredit: data.imageCredit || undefined,
       imagePosition: data.imagePosition || undefined,
+      cardImage: data.cardImage || undefined,
+      cardImageAlt: data.cardImageAlt || undefined,
+      youtubeUrl: data.youtubeUrl || undefined,
+      quote: data.quote || undefined,
     };
   });
 
@@ -90,6 +98,10 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     imageAlt: data.imageAlt || undefined,
     imageCredit: data.imageCredit || undefined,
     imagePosition: data.imagePosition || undefined,
+    cardImage: data.cardImage || undefined,
+    cardImageAlt: data.cardImageAlt || undefined,
+    youtubeUrl: data.youtubeUrl || undefined,
+    quote: data.quote || undefined,
     content,
   };
 }

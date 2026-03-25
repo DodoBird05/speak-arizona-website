@@ -4,6 +4,8 @@ date: "February 17, 2026"
 excerpt: "Most speakers lose the room before they finish their first sentence. Serban Mare walks through the 10 most common opening mistakes and 3 alternatives that actually earn attention."
 tag: "Public Speaking"
 guest: "Serban Mare, Corporate Speaker & Technical Program Manager"
+youtubeUrl: "https://youtu.be/_n4PsJLbQ2I"
+quote: "The storm that's happening inside never shows the same way that you are on the outside."
 image: "/images/serban-mare-corporate-speaker-speak-arizona-by-marie-feutrier.webp"
 imageAlt: "Serban Mare, corporate speaker and past co-host of Speak Arizona podcast"
 ---
@@ -160,4 +162,4 @@ New episodes drop every week. Subscribe so you never miss a courageous conversat
 
 ---
 
-*Speak Arizona is powered by District 3 Toastmasters, serving Arizona, New Mexico, and West Texas.*
+*Speak Arizona is powered by [District 3 Toastmasters](https://d3toastmasters.org), serving Arizona, New Mexico, and West Texas.*

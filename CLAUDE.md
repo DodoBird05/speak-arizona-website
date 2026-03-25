@@ -94,6 +94,9 @@ Two gradient images replace solid blue in hero sections and cards:
 - **External links**: Automatically get `target="_blank" rel="noopener noreferrer"`
 - **Default OG image**: Posts without a featured image use `/images/speak-arizona-default-og.webp`
 
+### After creating a blog post
+- Always start the dev server and open the post in the browser for preview before considering it done.
+
 ### Blog Frontmatter
 ```yaml
 ---
@@ -104,6 +107,10 @@ tag: "Leadership"
 guest: "Guest Name (optional — omit for host-authored posts)"
 image: "/images/featured-image.webp"
 imageAlt: "Descriptive alt text"
+youtubeUrl: "https://youtu.be/VIDEO_ID (optional — embeds at top of post)"
+quote: "Pull quote from the episode (optional — displayed between video and excerpt)"
+cardImage: "/images/card-image.webp (optional — separate image for news listing cards, falls back to image)"
+cardImageAlt: "Alt text for card image (optional)"
 ---
 ```
 
