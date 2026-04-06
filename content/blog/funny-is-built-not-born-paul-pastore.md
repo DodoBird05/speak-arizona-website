@@ -4,7 +4,7 @@ date: "April 5, 2026"
 excerpt: "Paul Pastore has been in Toastmasters for nearly 50 years. He shares why humor is a skill you build, not a personality trait, and what keeps someone coming back for decades."
 tag: "Public Speaking"
 guest: "Paul Pastore"
-youtubeUrl: "https://youtu.be/uQRMNriyndo"
+youtubeUrl: "https://youtu.be/bOvOhdEBVIw"
 quote: "Stand up, speak up, shut up, sit down. That's it."
 image: "/images/paul-pastore-speak-arizona-by-marie-feutrier.webp"
 imageAlt: "Paul Pastore in a blue plaid blazer at the Speak Arizona podcast studio"
@@ -125,7 +125,7 @@ Want to connect with Paul? Google him. His words, not ours.
 
 Catch the full conversation on your favorite platform:
 
-- [Watch on YouTube](https://www.youtube.com/watch?v=uQRMNriyndo)
+- [Watch on YouTube](https://www.youtube.com/watch?v=bOvOhdEBVIw)
 - [Listen on Spotify](https://open.spotify.com/show/speak-arizona)
 - [Listen on Apple Podcasts](https://podcasts.apple.com/us/podcast/speak-arizona)
 

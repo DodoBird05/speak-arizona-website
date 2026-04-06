@@ -176,6 +176,12 @@ export default async function Home() {
                 <span className="inline-block transition-transform duration-200 ease-out hover:scale-110 cursor-default mr-[0.3em]">AND</span>
                 <span className="inline-block transition-transform duration-200 ease-out hover:scale-110 cursor-default mr-[0.3em]" style={{ backgroundColor: "#F2DF74", color: "#000", padding: "0 4px" }}>FIND YOUR VOICE</span>
               </p>
+              <a
+                href="#latest-episode"
+                className="inline-block bg-yellow text-black font-heading font-bold text-sm px-6 py-3 rounded-full hover:bg-yellow-light transition-colors mt-6"
+              >
+                WATCH THE LATEST EPISODE
+              </a>
             </div>
           </div>
         </div>
@@ -210,33 +216,17 @@ export default async function Home() {
           >
             COURAGEOUS CONVERSATIONS TO <span style={{ backgroundColor: "#F2DF74", padding: "0 4px", boxDecorationBreak: "clone", WebkitBoxDecorationBreak: "clone" }}>LEAD AUTHENTICALLY, INSPIRE ACTION, AND FIND YOUR VOICE</span>
           </p>
-        </div>
-        {/* Description — visible on all devices */}
-        <div className="bg-white px-6 py-10 md:py-16">
-          <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-12 md:items-start">
-            <h2 className="font-heading font-bold text-2xl md:text-3xl text-black leading-snug mb-6 md:mb-0 md:transition-transform md:duration-300 md:ease-out md:hover:scale-105 md:cursor-default" style={{ transformOrigin: "left center" }}>
-              Your space to grow your voice, sharpen your leadership, and connect with people — one conversation at a time.
-            </h2>
-            <div>
-              <p className="text-text-light text-base md:text-lg leading-relaxed mb-4">
-                Whether you&apos;re stepping into a job interview, leading a team meeting, or standing on a stage for the first time, how you communicate changes everything.
-              </p>
-              <p className="text-text-light text-base md:text-lg leading-relaxed mb-4">
-                Speak Arizona is the podcast where host Rupesh Parbhoo sits down with speakers, coaches, and leaders who&apos;ve mastered the craft of communication — and learned it the hard way. Each episode delivers honest conversations, real strategies, and lessons you can use immediately.
-              </p>
-              <p className="text-text-light text-base md:text-lg leading-relaxed mb-4">
-                No fluff. No corporate jargon. Just courageous conversations that actually make a difference.
-              </p>
-              <p className="text-black/50 text-sm leading-relaxed">
-                Speak Arizona is powered by District 3 Toastmasters International, serving Arizona, New Mexico, and West Texas.
-              </p>
-            </div>
-          </div>
+          <a
+            href="#latest-episode"
+            className="inline-block bg-yellow text-black font-heading font-bold text-sm px-6 py-3 rounded-full hover:bg-yellow-light transition-colors mt-6"
+          >
+            WATCH THE LATEST EPISODE
+          </a>
         </div>
       </section>
 
       {/* Latest Episode */}
-      <section className="bg-white py-20">
+      <section id="latest-episode" className="bg-white py-20 scroll-mt-24">
         <div className="max-w-6xl mx-auto px-6">
           <AnimateOnScroll className="mb-12">
             <h2 className="text-text-light text-sm uppercase tracking-wide">
@@ -254,6 +244,29 @@ export default async function Home() {
               <EpisodeCarousel episodes={recent} />
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Description */}
+      <section className="bg-white px-6 py-10 md:py-16">
+        <div className="max-w-6xl mx-auto md:grid md:grid-cols-2 md:gap-12 md:items-start">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl text-black leading-snug mb-6 md:mb-0 md:transition-transform md:duration-300 md:ease-out md:hover:scale-105 md:cursor-default" style={{ transformOrigin: "left center" }}>
+            Your space to grow your voice, sharpen your leadership, and connect with people — one conversation at a time.
+          </h2>
+          <div>
+            <p className="text-text-light text-base md:text-lg leading-relaxed mb-4">
+              Whether you&apos;re stepping into a job interview, leading a team meeting, or standing on a stage for the first time, how you communicate changes everything.
+            </p>
+            <p className="text-text-light text-base md:text-lg leading-relaxed mb-4">
+              Speak Arizona is the podcast where host Rupesh Parbhoo sits down with speakers, coaches, and leaders who&apos;ve mastered the craft of communication — and learned it the hard way. Each episode delivers honest conversations, real strategies, and lessons you can use immediately.
+            </p>
+            <p className="text-text-light text-base md:text-lg leading-relaxed mb-4">
+              No fluff. No corporate jargon. Just courageous conversations that actually make a difference.
+            </p>
+            <p className="text-black/50 text-sm leading-relaxed">
+              Speak Arizona is powered by District 3 Toastmasters International, serving Arizona, New Mexico, and West Texas.
+            </p>
+          </div>
         </div>
       </section>
 
