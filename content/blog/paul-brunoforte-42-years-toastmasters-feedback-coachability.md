@@ -1,6 +1,6 @@
 ---
 title: "42 Years of Toastmasters: Paul Brunoforte on Feedback, Coachability, and Never Playing It Safe"
-date: "August 16, 2026"
+date: "July 16, 2026"
 excerpt: "Distinguished Toastmaster Paul Brunoforte on 42 years in the club, why softening feedback robs people of growth, and what it takes to keep stretching at 80."
 tag: "Public Speaking"
 guest: "Paul Brunoforte"
